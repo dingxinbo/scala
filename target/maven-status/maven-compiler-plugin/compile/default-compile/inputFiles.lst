@@ -1,0 +1,4 @@
+/home/dingxinbo/cnpc/hadooptrain/src/main/java/com/imooc/hadoop/mapreduce/CombinerApp.java
+/home/dingxinbo/cnpc/hadooptrain/src/main/java/com/imooc/hadoop/mapreduce/WordCountApp.java
+/home/dingxinbo/cnpc/hadooptrain/src/main/java/com/imooc/hadoop/mapreduce/WordCount2App.java
+/home/dingxinbo/cnpc/hadooptrain/src/main/java/com/imooc/hadoop/mapreduce/PartitionerApp.java

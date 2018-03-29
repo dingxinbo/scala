@@ -1,0 +1,3 @@
+[{"dst_as":0,"dst_ip":1885335600,"sampling_algorithm":0,"src_ip":3232243929,"protocol":6,"time_received":1516410237629}]
+[{"dst_as":0,"dst_ip":3395944468,"sampling_algorithm":0,"src_ip":3232237789,"protocol":17,"time_received":1516410237633}]
+[{"dst_as":0,"dst_ip":1987799559,"sampling_algorithm":0,"src_ip":3232250528,"protocol":6,"time_received":1516410237629}]

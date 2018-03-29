@@ -1,0 +1,34 @@
+一、 简答题（共5题，每题20分，总100分）
+
+图（1）
+1. 根据图（1）解释对应部件在Spark中的作用？
+Worker:相当于计算节点，接收主节点命令与进行状态汇报，启动Executor或Driver
+Master:作为整个集群的控制器，负责整个集群的正常运行
+ClusterManager:在Standalone模式中即为Master，在Yarn模式下为资源管理器
+Driver:负责控制一个应用的执行
+Executor:负责任务的执行
+2. 根据图（1）简单描述当client发起命令后，在spark中如何运作？
+
+client提交  clusterManager 找到一个worker启动dirver  ，driver向 clusterManager 申请资源 ，之后由RDD DAG  ，DAGScheduler将RDD DAG  转化为stage  在由tastscheduler提交任务给 executor执行
+
+
+图（2）
+
+3.  根据图（2）简单描述spark的执行逻辑
+Action算子出发后 将所有的算子形成有向无环图，然后由 clusterManager调度图上的任务进行计算
+textfile从HDFS读取，得到RDD A和 RDD C ，RDD A 进行flatmap操作和map操作 形成RDD B ， RDD C 通过形成 RDD D ， 在通过reducebykey 形成 RDD E ， RDD B 和rdd E  通过join 形成 RDD F  最后通过 saveAsSequenceFile 把数据写入HDFS 
+
+
+4. （1）编写程序并描述创建RDD的方式（15分）
+
+	 spark1 中
+（2）Spark中RDD算子有哪几种（5分）
+	transfromation  Action  两种
+
+5.  利用Spark map算子和foreach算子将以下的日志中的dst_ip,src_ip转成ip类型，并遍历。(提示：这是json类型，利用fastJson对日志进行处理)
+
+spark1  中
+
+
+
+

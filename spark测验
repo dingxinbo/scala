@@ -21,13 +21,13 @@ textfile从HDFS读取，得到RDD A和 RDD C ，RDD A 进行flatmap操作和map�
 
 4. （1）编写程序并描述创建RDD的方式（15分）
 
-	 spark1 中
+	项目 spark1 中
 （2）Spark中RDD算子有哪几种（5分）
 	transfromation  Action  两种
 
 5.  利用Spark map算子和foreach算子将以下的日志中的dst_ip,src_ip转成ip类型，并遍历。(提示：这是json类型，利用fastJson对日志进行处理)
 
-spark1  中
+项目spark1  中
 
 
 
